@@ -53,6 +53,7 @@
     <Compile Include="Behaviors\DataGridAutoscrollBehavior.cs" />
     <Compile Include="Behaviors\DataGridBehavior.cs" />
     <Compile Include="Behaviors\ListBoxAutoscrollBehavior.cs" />
+    <Compile Include="Behaviors\TriggerTracing.cs" />
     <Compile Include="Common\CollectionExtensions.cs" />
     <Compile Include="Common\ObservableCollectionEx.cs" />
     <Compile Include="Common\PropertyObserver.cs" />

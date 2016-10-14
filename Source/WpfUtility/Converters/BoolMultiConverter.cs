@@ -5,7 +5,7 @@ using System.Windows.Data;
 namespace WpfUtility.Converters
 {
     /// <summary>
-    /// 多个条件
+    /// 多个bool条件进行与，均为True则True，否则为False
     /// </summary>
     public class BoolMultiConverter : IMultiValueConverter
     {

@@ -13,6 +13,9 @@
                    MouseDown="textBlockName_MouseDown" />
         <TextBox Name="textBoxName" Text="{Binding ElementName=root, Path=Text}"
                  TextWrapping="Wrap"
-                 Visibility="Collapsed" LostFocus="textBoxName_LostFocus" KeyDown="textBoxName_KeyDown" />
+                 Visibility="Collapsed" 
+                 MaxLength="{Binding MaxLength, ElementName=root}"
+                 LostFocus="textBoxName_LostFocus"
+                 KeyDown="textBoxName_KeyDown" />
     </Grid>
 </UserControl>

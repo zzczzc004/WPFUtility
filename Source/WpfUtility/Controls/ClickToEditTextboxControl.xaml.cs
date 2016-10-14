@@ -29,6 +29,15 @@ namespace WpfUtility.Controls
         public static readonly DependencyProperty TextProperty =
             DependencyProperty.Register("Text", typeof(string), typeof(ClickToEditTextboxControl), new UIPropertyMetadata());
 
+        public static readonly DependencyProperty MaxLengthProperty = DependencyProperty.Register(
+            "MaxLength", typeof (int), typeof (ClickToEditTextboxControl), new PropertyMetadata(default(int)));
+        
+        public int MaxLength
+        {
+            get { return (int) GetValue(MaxLengthProperty); }
+            set { SetValue(MaxLengthProperty, value); }
+        }
+
         private void textBoxName_LostFocus(object sender, RoutedEventArgs e)
         {
             textBlockName.Visibility = Visibility.Visible;

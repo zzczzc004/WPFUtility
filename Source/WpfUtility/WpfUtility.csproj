@@ -19,7 +19,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,6 +56,7 @@
     <Compile Include="Behaviors\ListBoxAutoscrollBehavior.cs" />
     <Compile Include="Behaviors\TriggerTracing.cs" />
     <Compile Include="Common\CollectionExtensions.cs" />
+    <Compile Include="Common\EncryptUtils.cs" />
     <Compile Include="Common\ObservableCollectionEx.cs" />
     <Compile Include="Common\PropertyObserver.cs" />
     <Compile Include="Common\SyncCollectionWithExtraItem.cs" />
@@ -78,6 +80,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="RelayCommand.cs" />
+    <Compile Include="SingleInstance.cs" />
     <Compile Include="XAML\BindingProxy.cs" />
     <Compile Include="XAML\PasswordHelper.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

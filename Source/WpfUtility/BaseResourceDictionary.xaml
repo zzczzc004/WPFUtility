@@ -45,13 +45,15 @@
     </Style>
 
     <DataTemplate x:Key="ButtonLikeGroupBoxHeaderTemplate">
-        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Width="80">
+        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Padding="5" Width="140">
             <Label Content="{Binding}" Foreground="Gray" 
+                   Style="{x:Null}"
                    HorizontalAlignment="Center"/>
         </Border>
     </DataTemplate>
     
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Styles/ButtonStyle.xaml" />
+        <ResourceDictionary Source="Styles/ScrollViewerStyle.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

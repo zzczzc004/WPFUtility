@@ -54,6 +54,7 @@
     <Compile Include="Behaviors\DataGridAutoscrollBehavior.cs" />
     <Compile Include="Behaviors\DataGridBehavior.cs" />
     <Compile Include="Behaviors\ListBoxAutoscrollBehavior.cs" />
+    <Compile Include="Behaviors\FrameworkElementFocusBehavior.cs" />
     <Compile Include="Behaviors\TriggerTracing.cs" />
     <Compile Include="Common\CollectionExtensions.cs" />
     <Compile Include="Common\EncryptUtils.cs" />
@@ -105,6 +106,10 @@
     <Page Include="Styles\ButtonStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ScrollViewerStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

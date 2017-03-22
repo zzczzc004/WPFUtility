@@ -28,6 +28,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -36,6 +37,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -54,19 +56,25 @@
     <Compile Include="Behaviors\DataGridAutoscrollBehavior.cs" />
     <Compile Include="Behaviors\DataGridBehavior.cs" />
     <Compile Include="Behaviors\ListBoxAutoscrollBehavior.cs" />
+    <Compile Include="Behaviors\DropDownButtonBehavior.cs" />
     <Compile Include="Behaviors\FrameworkElementFocusBehavior.cs" />
     <Compile Include="Behaviors\TriggerTracing.cs" />
+    <Compile Include="Behaviors\ScrollViewerCorrectorBehavior.cs" />
+    <Compile Include="Behaviors\TouchScrollingBehavior.cs" />
     <Compile Include="Common\CollectionExtensions.cs" />
     <Compile Include="Common\EncryptUtils.cs" />
     <Compile Include="Common\ObservableCollectionEx.cs" />
     <Compile Include="Common\PropertyObserver.cs" />
     <Compile Include="Common\SyncCollectionWithExtraItem.cs" />
+    <Compile Include="Controls\CanvasAutoSize.cs" />
     <Compile Include="Controls\ClickToEditTextboxControl.xaml.cs">
       <DependentUpon>ClickToEditTextboxControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\FullGridLineDataGrid.cs" />
     <Compile Include="Converters\BoolMultiConverter.cs" />
     <Compile Include="Converters\ChainConverter.cs" />
     <Compile Include="Converters\NegateConverter.cs" />
+    <Compile Include="Converters\RowNumberConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

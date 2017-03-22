@@ -9,6 +9,7 @@
         <converters:NegateConverter />
         <BooleanToVisibilityConverter />
     </converters:ChainConverter>
+    <converters:RowNumberConverter x:Key="RowNumberConverter" />
 
     <Style x:Key="GridSplitterBaseStyle" TargetType="{x:Type GridSplitter}">
         <Setter Property="ShowsPreview" Value="True" />
